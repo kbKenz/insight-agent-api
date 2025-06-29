@@ -1,21 +1,64 @@
-.mypy_cache
-.pytest_cache
-__pycache__
-.coverage
+# Version control
+.git
 .gitignore
 .github
-*.md
-env
-.dockerignore
+
+# Environment files - these will be passed as build args
+.env*
+.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+pytestdebug.log
+*.egg-info/
+*.ipynb
+
+# Virtual environments
+.venv
+venv
+ENV/
+env/
+
+# Development tools
+.idea
+.vscode
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Docker
 Dockerfile
-Dockerfile.prod
-docker-compose.yaml
-.eslintrc.js
-requirements-build.txt
-requirements-lint.txt
-requirements-test.txt
-requirements-dev.txt
-requirements-prod.txt
-CONTAINER.md
+.dockerignore
+docker-compose.yml
+
+# Documentation
+docs/
 README.md
-node_modules/
+*.md
+
+# Build artifacts
+*.pyc
+*.pyo
+*.egg-info
+dist/
+build/
+
+# other
+schema.sql
+
+# Reports
+evals/reports/
