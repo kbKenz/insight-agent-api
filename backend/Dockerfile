@@ -18,7 +18,7 @@ EXPOSE 8000
 
 # Install system dependencies
 RUN apt-get update \
-  && apt-get -y install netcat-openbsd gcc postgresql \
+  && apt-get -y install netcat gcc postgresql \
   && apt-get clean
 
 # Install Python dependencies
